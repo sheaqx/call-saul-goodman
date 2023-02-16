@@ -1,5 +1,34 @@
+@import url("//fonts.googleapis.com/css2?family=Archivo+Black:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    filter: brightness(75%);
+    box-shadow:2px 0px 70px 29px #000000;
+  }
+  
+#overlay {
+    display:none;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    opacity:80%;
+    background-color: #000000;
+}
+
 body{
-    background-color: grey;
+    background: rgb(254,175,13);
+    background: linear-gradient(180deg, rgba(254,175,13,1) 35%, rgba(234,228,31,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .saul{
@@ -8,11 +37,11 @@ body{
     align-items: center;
 }
 
-/* Text */
 .text{
  text-align:center;
- font-family:'Vollkorn SC', serif;
- color:#ffffff;
+ font-family:'Archivo Black', sans-serif;
+ color:#ff0200;
+ text-shadow:#ffffff 0px 2px 2px, #ffffff 0px -2px 2px, #ffffff 2px 0px 2px, #ffffff -2px 0px 2px;
 }
 
 button {
@@ -28,41 +57,13 @@ button {
     padding: 15px 30px;
   }
   
-  button:active {
+button:active {
     box-shadow: inset -1px -1px #fff, inset 1px 1px #292929, inset -2px -2px #ffffff, inset 2px 2px rgb(158, 158, 158);
   }
-
-/* Input 
-.saul button {
- font-family:'Adamina', serif;
- border-top-left-radius:10px;
- border-top-right-radius:10px;
- border-bottom-left-radius:10px;
- border-bottom-right-radius:10px;
- padding: 15px 32px;
- margin: 4px 2px;
- cursor: pointer;
- font-size: 16px;
- box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}*/
 
 .saul-logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-}
-
-/* .saul button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-} */
-
-.saul-gif {
-    display: none; 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;
 }
