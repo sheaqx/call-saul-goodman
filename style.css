@@ -23,10 +23,13 @@ video {
     opacity:80%;
     background-color: #000000;
 }
+* {
+  font-family:'Archivo Black', sans-serif;
 
+}
 body{
-    background: rgb(254,175,13);
-    background: linear-gradient(180deg, rgba(254,175,13,1) 35%, rgba(234,228,31,1) 100%);
+    background: #feaf0d;
+    background: linear-gradient(180deg, #feaf0d 35%, #eae41f 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -39,27 +42,36 @@ body{
 
 .text{
  text-align:center;
- font-family:'Archivo Black', sans-serif;
+}
+
+.text h1{
+ font-size:40px;
  color:#ff0200;
  text-shadow:#ffffff 0px 2px 2px, #ffffff 0px -2px 2px, #ffffff 2px 0px 2px, #ffffff -2px 0px 2px;
 }
 
+.text h2, h3{
+  text-shadow: none;
+  color:#494127;
+ }
+
 button {
-    font-family: inherit;
-    border: none;
-    outline: 1px dotted rgb(37, 37, 37);
-    outline-offset: -4px;
-    background: hsl(0deg 0% 75%);
-    box-shadow: inset -1px -1px #292929, inset 1px 1px #fff, inset -2px -2px rgb(158, 158, 158), inset 2px 2px #ffffff;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 2px; 
-    padding: 15px 30px;
+  width: 20%;
+  padding: 8px 0;
+  margin-top: 10px;
+  border-radius: 5px;
+  border-style: none;
+  background: #494127;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.3s;
+  box-shadow:0px 5px 10px 0px #9e5f11;
   }
   
-button:active {
-    box-shadow: inset -1px -1px #fff, inset 1px 1px #292929, inset -2px -2px #ffffff, inset 2px 2px rgb(158, 158, 158);
-  }
+  button:hover {
+    background: #ff8130;
+   }
 
 .saul-logo {
     display: block;
