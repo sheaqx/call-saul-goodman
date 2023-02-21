@@ -19,7 +19,7 @@ function playVideo() {
       });
   }  
 
-  function playAudio() {
+function playAudio() {
     var audio = document.getElementById("saul-audio");
     audio.play();
     audio.addEventListener('ended', hideImage);
