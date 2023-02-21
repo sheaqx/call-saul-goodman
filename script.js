@@ -18,3 +18,19 @@ function playVideo() {
         window.location.href = 'http://bettercallsaul.amc.com/';
       });
   }  
+
+  function playAudio() {
+    var audio = document.getElementById("saul-audio");
+    audio.play();
+    audio.addEventListener('ended', hideImage);
+}
+
+function displayImage() {
+    var image = document.getElementById("saul-gif");
+    image.style.display = "block";
+}
+
+function hideImage() {
+    var image = document.getElementById("saul-gif");
+    image.style.display = "none";
+}

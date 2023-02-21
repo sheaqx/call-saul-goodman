@@ -22,10 +22,21 @@
 		</h3>
 
 	</div>
+
 	<div class="saul">
+		<audio id="saul-audio">
+			<source src="src/sound/saul-goodman-better-call-saul.mp3" type="audio/mpeg" />
+		</audio>
+
+		<img id="saul-gif" src="src/images/3d-saul-saul-goodman.gif" />
+
 		<button id="play-video-button" onclick="playVideo()">☎️ Call Saul Goodman</button>
+
+		<button id="random-button" onclick="playAudio(); displayImage();"></button>
 		<div id="overlay"></div>
 	</div>
+	
+	<script src="button.js"></script>
 </body>
 
 </html>

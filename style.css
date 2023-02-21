@@ -55,7 +55,17 @@ body{
   color:#494127;
  }
 
-button {
+#saul-gif{
+  display: none; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+
+#play-video-button {
   width: 20%;
   padding: 8px 0;
   margin-top: 10px;
@@ -69,7 +79,7 @@ button {
   box-shadow:0px 5px 10px 0px #9e5f11;
   }
   
-  button:hover {
+#play-video-button:hover {
     background: #ff8130;
    }
 
@@ -78,4 +88,15 @@ button {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+#random-button {
+  position: absolute;
+  width: 15%;
+  height: 15%;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  cursor: help;
 }
